@@ -1,0 +1,62 @@
+//main: ../style.less
+
+.work {
+    border-radius: 10px;
+    box-shadow: 0 0 4px fade(#000, 25%);
+    overflow: hidden;
+
+    transition: box-shadow .2s linear;
+
+    &:hover {
+        box-shadow: 0 0 25px fade(#000, 25%);
+    }
+
+    @media @mobile {
+        max-width: 370px;
+    }
+
+    @media @mobile-sm {
+        margin: 0 auto;
+    }
+}
+.work__img{
+    display: block;
+    max-width: 100%;
+    /*height: auto;*/
+
+    width: 370px;
+    height: 300px;
+    background: rgb(114, 113, 113);
+
+    @media @tablet {
+        height: 230px;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+}
+.work__content{
+    padding: 1rem 0.8rem;
+
+    @media @tablet {
+        padding: .5rem .8rem;
+    }
+
+   
+}
+
+.work__cat{
+    margin-bottom: 0.5rem;
+    font-size: .8rem;
+    color: @black;
+    text-transform: uppercase;
+}
+.work__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
